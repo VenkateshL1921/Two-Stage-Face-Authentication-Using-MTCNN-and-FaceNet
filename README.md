@@ -4,7 +4,10 @@
 Build a system that authenticates the user based on the user details and face embeddings of the user.  
 
 ## Approach 
-Building a system which is able to login the user if user is already register in system and then authenticate and grant permission/entry based on the similarity of face embedding stored in database and current face embedding. If user is not already registered, then redirect user to register page.
+1. Building a system which is able to login the user if user is already registered in system.
+2. Authenticate and grant permission/entry based on the similarity of face embedding stored in database and current face embedding if already registed. 
+3. If user is not already registered, then redirect user to register page.
+4. Store the user details and face embeddings in database after registration.
 This is a two stage face authentication system which using MTCNN for face detection and FaceNet for extracting face embeddings. 
  
 ## Tech stack
@@ -25,8 +28,8 @@ git clone https://github.com/VenkateshL1921/Two-Stage-Face-Authentication-Using-
 
 ### create a virtual environment and activate it
 ```
-a. python3 -m venv venv
-b. source venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 ### Install the libraries
